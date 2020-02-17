@@ -20,13 +20,13 @@ public class Servlet extends HttpServlet {
         String num1 = request.getParameter("num1");
         String num2 = request.getParameter("num2");
         String op = request.getParameter("operacion");
-        int n1 = Integer.parseInt(num1);
-        int n2 = Integer.parseInt(num2);
+        float n1 = Float.parseFloat(num1);
+        float n2 = Float.parseFloat(num2);
         
         System.out.println("num1:" + num1);
         System.out.println("num2:" + num2);
         System.out.println("operacion:" + op);
-        int  result = 0;
+        float  result = 0;
         String ope = "";
         switch(op) {
             case "1":
